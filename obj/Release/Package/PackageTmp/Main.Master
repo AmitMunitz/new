@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="End_Project.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style/NewMainStyle.css" rel="stylesheet" />
+    <style>
+
+    </style>
+    <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="navbar">
+                <a href="Home.aspx" class="btn">Home</a>
+                <a href="Chess Rules.aspx" class="btn">Quotes</a>
+                <a href="Openings.aspx" class="btn">Best Goals</a>
+                <% if (Session["PreferredColor"].ToString() == "Black"){ %>
+                <a href="https://en.wikipedia.org/wiki/7" class="btn">The United Special</a>
+                <% } %>
+                <% if (Session["Admin"] != null && (bool)Session["Admin"]) { %>
+                    <a href="UpdateAndDelete.aspx" class="btn">AdminOnly</a>
+                <% } %>
+
+
+
+
+                 <a class="btn" style="float:right">
+                    <% Response.Write("Hello " + Session["uname"]); %>
+                  </a>
+            </div>
+                <input runat="server" style=" font-size:50px; position: fixed; bottom: 0; right: 0; margin: 20px;" type="submit" id="logout" name="logout" value="logout" />
+            <asp:ContentPlaceHolder ID="ContentPlaceBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

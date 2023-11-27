@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="sql.master.cs" Inherits="End_Project.sql" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style/StyleForSql.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>
+            <div class="navbar">
+                <a href="Home.aspx" class="btn">Home</a>
+                <% if (Session["Admin"] != null && (bool)Session["Admin"]) { %>
+                   <a href="Sort.aspx" class="btn">Sort</a>
+                   <a href="UpdateAndDelete.aspx" class="btn">UpdateAndDelete</a>
+                   <a href="Search.aspx" class="btn">AdvancedSearch</a>
+                   <a href="ForgotPassword.aspx" class="btn">ForgotPassword</a>
+                   <a class="btn" style="float:right">
+                    <% Response.Write("Hello " + Session["uname"]); %>
+                   </a>
+                <% } %>
+
+
+            </div>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceBody" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

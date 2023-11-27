@@ -1,0 +1,51 @@
+﻿.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 150px);
+    grid-template-rows: repeat(8, 150px);
+    margin: auto;
+    position: relative;
+}
+
+    .board > div {
+        background-color: #fff;
+        border: 1px solid #000;
+        height: 150px;
+        width: 150px;
+        font-size: 96px;
+        text-align: center;
+        line-height: 150px;
+        user-select: none;
+        cursor: pointer;
+        float: none;
+    }
+
+    .board > .black {
+        background-color: #000;
+        color: #fff;
+    }
+
+.rook , .bishop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 80px;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+

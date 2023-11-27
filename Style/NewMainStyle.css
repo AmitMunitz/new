@@ -1,0 +1,202 @@
+﻿.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar b {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/DarwinMyLove.png');
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 110px;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5);
+}
+l {
+    font-size: 55px;
+    text-indent: 40px;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5);
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5);
+}
+
+g {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    line-height: 1.5;
+}
+
+f {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5);
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    line-height: 1.5;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5);
+}
+
+a {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    line-height: 1.5;
+    font-size: 20px;
+    padding-left: 8em;
+    color: #fff;
+}
+
+.rules {
+    background-color: #fff;
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+    .rules h2 {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #333;
+    }
+
+    .rules ol {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .rules li {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .rules a {
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    font-family: Aharoni;
+}
+
+    .btn:hover {
+        background-color: #555;
+    }
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    width: 50%;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.right-section {
+    width: 50%;
+    padding-left: 20px;
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.left-section a {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 24px;
+}
+
+.right-section a {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 24px;
+}
